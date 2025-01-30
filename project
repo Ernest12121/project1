@@ -1,0 +1,35 @@
+score = 0
+
+try:
+    answer = input("Коли хрестили Київську Русь?: ")  
+    if answer == "988":
+        print("Правильно!")
+        score += 1
+    else:
+        print("Неправильно. Правилна відповідь: 988")
+
+    answer = input("Яка слолиця Єгипту?: ")  
+    if answer.lower() == "каїр":
+        print("Правильно!")
+        score += 1
+    else:
+        print("Неправильно. Правильна відповідь: Каїр")
+
+    answer = input("Який колір неба?: ")  
+    if answer.lower() == "синій":
+        print("Правильно!")
+        score += 1
+    else:
+        print("Неправильно. Правильна відповідь: Синій")
+
+    answer = input("Яка країна найменша у світі?: ")  
+    if answer.lower() == "ватикан":
+        print("Правильно!")
+        score += 1
+    else:
+        print("Неправильно. Правильна відповідь: Ватикан")
+
+except ValueError:
+    print("Помилка!")
+
+print(f"Ви набрали {score} балів із 4.")
